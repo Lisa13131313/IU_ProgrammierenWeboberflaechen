@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Kleiderhilfe</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <script type="text/javascript" src="scripts/formular.js"></script>
+
+    <link href="sticky-footer.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid" style="background-color: #dee6c3">
+            <a class="navbar-brand" href="index.html" style="font-size: 2em; color: #61804a">
+                <img class="img-fluid" src="Logo_geschnitten.png" alt="Kleiderhilfe" width="90em">
+                Kleiderhilfe
+            </a>
+            <div class="d-flex flex-row-reverse">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown me-3">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false" style="font-size: 1.5em">
+                                Spenden
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="geschaeftsstelle.html">Geschäftsstelle</a></li>
+                                <li><a class="dropdown-item" href="sammelfahrzeug.html">Sammelfahrzeug</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-3">
+                            <a class="nav-link" href="ueberuns.html" style="font-size: 1.5em">Über uns</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <div class="container text-center mt-5 pt-4">
+        <div class="row mt-2">
+            <div class="col">
+                <h1 style="color: #61804a">Kleiderhilfe</h1>
+                <h2>Ihre Spende macht Leben lebenswert!</h2>
+                <div class="col mt-4 pt-4">
+                    <h4>Sie haben sich für die Abholung ihrer Spende mit unserem Sammelfahrzeug entschieden.</h4>
+                    <div class="row mt-4">
+                        <p style="font-size: 1.25em">Hierfür brauchen wir neben Ihrem vollständigen Namen auch Ihre
+                            vollständige Adresse.</p>
+                    </div>
+                    <div class="row mt-1">
+                        <p style="font-size: 1.25em">Falls Ihre Adresse außerhalb unseres Abhol-Radius liegt, werden wir
+                            Sie darauf hinweisen.</p>
+                    </div>
+                    <div class="row mt-1">
+                        <p style="font-size: 1.25em">Bitte wählen Sie außerdem über die Listen
+                            die Art der Kleidung und Ihr gewünschtes Krisengebiet aus.</p>
+                    </div>
+                </div>
+
+                <!-- Adresse Eingabe -->
+                <form method="get" action="zusammenfassung.html">
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="mt-4">
+                                    <label class="form-label">Vorname</label>
+                                    <input id="vName" type="text" name="Vorname" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mt-4">
+                                    <label class="form-label">Nachname</label>
+                                    <input id="nName" type="text" name="Nachname" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="mt-4">
+                                    <label class="form-label">Straße</label>
+                                    <input id="strasse" type="text" name="Straße" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mt-4">
+                                    <label class="form-label">Hausnummer</label>
+                                    <input id="hNr" type="text" name="Hausnummer" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="mb-3 mt-4">
+                                    <label class="form-label">Postleitzahl</label>
+                                    <input id="plz" type="text" name="Postleitzahl"
+                                           class="form-control">
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 mt-4">
+                                    <label class="form-label">Ort</label>
+                                    <input id="ort" type="text" name="Ort" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fehlermeldung PLZ  -->
+                    <div id="warnung" class="container text-center row align-items-start mt-3" style="display: none">
+                        <div class="alert alert-danger" role="alert">
+                            Leider ist Ihr angegebener Ort außerhalb unseres Abhol-Radius.<br>
+                            Bitte bringen Sie Ihre Spende in die Geschäftsstelle.
+                        </div>
+                    </div>
+
+                    <!-- Marker für Sammelfahrzeug -->
+                    <input id="marker_fahrzeug" type="text" name="Marker" value="Sammelfahrzeug" style="display: none">
+
+                    <!-- Listen -->
+                    <div class="container text-center mt-2">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="dropdown-center">
+                                    <label class="form-label">Kleidungsart</label>
+                                    <select id="wahl_kleidung" class="form-select" size="5"
+                                            aria-label="Size 3 select example">
+                                        <option value="1">Oberteil Frauen</option>
+                                        <option value="2">Hose Frauen</option>
+                                        <option value="3">Jacke Frauen</option>
+                                        <option value="4">Rock Erwachsene</option>
+                                        <option value="5">Kleid Erwachsene</option>
+                                        <option value="6">Oberteil Männer</option>
+                                        <option value="7">Hose Männer</option>
+                                        <option value="8">Jacke Männer</option>
+                                        <option value="9">Babykleidung</option>
+                                        <option value="10">Kinderkleidung Mädchen bis 5 Jahre</option>
+                                        <option value="11">Kinderkleidung Jungen bis 5 Jahre</option>
+                                        <option value="12">Kinderkleidung Mädchen 5 bis 10 Jahre</option>
+                                        <option value="13">Kinderkleidung Jungen 5 bis 10 Jahre</option>
+                                        <option value="14">Teens Mädchen</option>
+                                        <option value="15">Teens Jungen</option>
+                                        <option value="16">Jacken Kinder und Teens</option>
+                                        <option value="17">Bettwäsche</option>
+                                        <option value="18">Schuhe Erwachsene</option>
+                                        <option value="19">Schuhe Kinder</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="dropdown-center">
+                                    <label class="form-label">Krisengebiet</label>
+                                    <select id="wahl_gebiet" class="form-select" size="5"
+                                            aria-label="Size 3 select example">
+                                        <option value="1">Ukraine</option>
+                                        <option value="2">Afghanistan</option>
+                                        <option value="3">Jemen</option>
+                                        <option value="4">Äthiopien</option>
+                                        <option value="5">Eritrea</option>
+                                        <option value="6">Südsudan</option>
+                                        <option value="7">Libyen</option>
+                                        <option value="8">Sudan</option>
+                                        <option value="9">Nigeria</option>
+                                        <option value="10">Somalia</option>
+                                        <option value="11">Syrien</option>
+                                        <option value="12">Venezuela</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wahl Ausgabe -->
+                    <div class="container text-center">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <div class="mb-3 mt-4">
+                                    <label class="form-label">Ihre Wahl</label>
+                                    <input id="out_kleidung" type="text" name="Kleidungsart" class="form-control"
+                                           readonly>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="mb-3 mt-4">
+                                    <label class="form-label">Ihre Wahl</label>
+                                    <input id="out_gebiet" type="text" name="Krisengebiet" class="form-control"
+                                           readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Absenden Button -->
+                    <div class="container text-center mt-2 pt-2">
+                        <div class="row align-items-start">
+                            <div class="col">
+                                <a class="navbar-brand" href="#">
+                                    <button type="submit" role="button"
+                                            class="btn btn-secondary btn-lg mb-2"
+                                            style="background-color: #61804a">
+                                        SPENDEN!
+                                    </button>
+                                </a>
+                                <p>Auf der nächsten Seite sehen Sie eine Zusammenfassung Ihrer Spende.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="container text-center">
+                <span class="text-muted">
+                    <ul class="list-unstyled">
+                        <li class="d-inline"><a class="navbar-brand me-3" href="impressum.html">Impressum</a></li>
+                        <li class="d-inline"><a class="navbar-brand me-3" href="datenschutz.html">Datenschutz</a></li>
+                    </ul>
+                </span>
+    </div>
+</footer>
+
+</body>
+</html>

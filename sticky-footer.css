@@ -1,0 +1,28 @@
+/* Sticky Footer */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Höhe des Footers */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Feste Höhe */
+    height: 60px;
+    /* Text vertikal zentriert */
+    line-height: 60px;
+    background-color: #f5f5f5;
+}
+
+/* Seiteninhalt schmäler */
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
